@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication</title>
+</head>
+<body>
+    <p id="txt_1">A number</p>
+    <input id="txb_a"/>
+    <p id="txt_2">B number</p>
+    <input id="txb_b"/>
+    <p></p>
+    <div>
+        <button id="btn_1" onclick="btn_1()">Calculate A * B</button>
+    </div>
+    <script>
+        function btn_1() {
+            var a_number = document.getElementById("txb_a").value
+            var b_number = document.getElementById("txb_b").value
+            var a = parseInt(a_number)
+            var b = parseInt(b_number)
+            alert(a * b)
+        }
+    </script>
+    <style>
+        #txt_1, #txt_2, #txb_a, #txb_b, #btn_1 {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</body>
+</html>

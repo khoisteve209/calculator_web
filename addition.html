@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Addition</title>
+</head>
+<body>
+    <div>
+        <p id="txt_a">A number</p>
+    </div>
+    <div>
+        <input type="text" id="a_num"/>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p id="txt_b">B number</p>
+    </div>
+    <div>
+        <input type="text" id="b_num"/>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <button type="button" id="btn_addition" onclick="btn_addition()">Calculate A + B</button>
+    </div>
+    <script>
+        function btn_addition() {
+            var a_num = document.getElementById("a_num").value
+            var b_num = document.getElementById("b_num").value
+            var a_number = parseInt(a_num)
+            var b_number = parseInt(b_num)
+            alert(a_number + b_number)
+        }
+    </script>
+    <style>
+        #btn_addition {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #txt_a {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #txt_b {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #a_num {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #b_num {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</body>
+</html>

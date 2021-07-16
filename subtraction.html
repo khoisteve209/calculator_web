@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subtraction</title>
+</head>
+<body>
+    <div>
+        <p id="txt_1">A number</p>
+        <div>
+            <input type="text" id="a_num"/>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <p id="txt_2">B number</p>
+        <div>
+            <input type="text" id="b_num"/>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <button type="button" id="btn_1" onclick="btn_1()">Calculate A - B</button>
+    </div>
+    <script>
+        function btn_1() {
+            var a_num = document.getElementById("a_num").value
+            var b_num = document.getElementById("b_num").value
+            var a_number = parseInt(a_num)
+            var b_number = parseInt(b_num)
+            alert(a_number - b_number)
+        }
+    </script>
+    <style>
+        #btn_1 {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #a_num {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #b_num {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #txt_1 {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #txt_2 {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Division</title>
+</head>
+<body>
+    <p id="txt_1">A number</p>
+    <input id="txb_1"/>
+    <p id="txt_2">B number</p>
+    <input id="txb_2"/>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <button id="btn_1" onclick="btn_1()">Calculate A / B</button>
+    </div>
+    <script>
+        function btn_1() {
+            var a_num = document.getElementById("txb_1").value
+            var b_num = document.getElementById("txb_2").value
+            var a = parseInt(a_num)
+            var b = parseInt(b_num)
+            alert(a / b)
+        }
+    </script>
+    <style>
+        #txt_1, #txt_2, #txb_1, #txb_2, #btn_1 {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</body>
+</html>
